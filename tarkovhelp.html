@@ -2,9 +2,193 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+		<title>Тарков хелп турнир</title>
 	</head>
 	<body>
+		<section class="banner">
+			<div class="hug">
+				<h1 class="text">
+					Одиночные квалификации на турнир
+				</h1>
+			</div>
+			<div class="headtag">
+				<h1 class="text">Турнир Tarkov.Help</h1>
+				<h2 class="description">Охота на новичков Одиночки</h2>
+			</div>
+			<div class="gradient">
+				
+			</div>
+			<div class="picture">
+			</div>
 		
+			
+
+			<button class="open-button" onclick="openForm()">Записаться на турнир</button>
+
+			<div class="form-popup" id="myForm">
+			<form action="#" class="form-container">
+				<h1 class="form-title">Записаться</h1>
+
+				<label for="name" class="name"><b>Twitch никнейм</b></label>
+				<input type="text" placeholder="Ваше имя" name="name" required>
+			
+				<label for="email" class="name"><b>e-mail</b></label>
+				<input type="text" placeholder="Ваш e-mail" name="email" required>
+
+				<label for="comment" class="name"><b>Комментарий</b></label>
+				<input type="text" placeholder="Комментарий" name="comment">
+
+				<button type="submit" class="btn">Отправить</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+			</form>
+			</div>
+
+			<div class="rules-title">Правила проведения турнира</div>
+			
+			<div class="goal-title">
+				Цель участников турнира:
+				<div class="goal-text">Игроки за 3 часа игры на локации Таможня, должны как можно больше раз выжить в рейдах и уничтожить как можно больше игроков на карте за один рейд. Турнир основан на PVP механике и удаче в нахождении игроков низкого уровня персонажа. </div>
+			</div>
+
+			<div class="snar-title">Снаряжение:
+				<div class="snar-text">Любое снаряжение на любую сумму денег с основного аккаунта игрока.</div>
+
+			</div>
+
+			<div class="score-title">Получение очков:
+				<div class="score-text">Убийства ЧВК с жетоном за один рейд:
+					<p class="green">1 убийство с жетоном <span class="yellow">- 1 очко</span></p>
+					<p class="green">2 убийства с жетоном <span class="yellow">- 4 очка </span></p>
+					<p class="green">3 убийства с жетоном <span class="yellow">- 8 очков</span></p>
+					<p class="green">4 убийства с жетоном <span class="yellow">- 16 очков</span></p>
+					<p class="green">5+ убийств с жетоном  <span class="yellow">- за каждого ЧВК по 5 очков</span></p>
+					<p class="green">Extra: убийтсво оружием ближнего боя <span class="yellow">- 20 очков</span></p>					
+				</div>
+			</div>
+			<div class="rule-descrip">*(Если уровень убитого ЧВК не превышает или равен 20, то дополнительно дается 4 очка за каждого)
+				<div class="rule-descrip-bot">*(Учитываются очки только в рейдах, где участник выжил в рейде, обязательно нужно собирать жетоны, иначе очки за убийство не будут засчитаны)</div>
+			</div>
+			<div class="turnament-time">
+				<div class="text-title">
+				Время проведения турнира 
+				<div class="text">
+					Прием заявок: 12-20 апреля
+					Проведение турнира: 23 апреля
+					</div>
+				</div>				
+			</div>
+			<div class="invite-rules">Правила подачи заявки:
+			<div class="invite-rules-text">Заявка должна включать в себя:<br/>
+				- двухчасовой стрим на платформе Twitch с названием:<span class="green"> Tarkov Help заявка </span><br/>
+				- ссылка на запись двухчасового стрима <br/>
+				- с самого начала стрима нужно показать статистику вашего персонажа по убийствам чвк, после уже начинать рейды на локации Таможня<br/>
+				- всегда показывать список убийств в конце рейда, не скрывать экран чем-либо<br/>
+				- по окончанию двух часов показать статистику персонажа по убийством чвк<br/>
+				- количество участников в турнире: 10 человек</div>
+
+			</div>
+			<div class="min-title">Минимальные требования к участнику:
+				<div class="min-title-text">- аккаунт на твиче, не важно партнер или нет<br/>
+					- 18 лет или более<br/>
+					- качество стрима для заявки 720p и выше<br/>
+					- умение говорить хорошо на русском языке<br/>
+					- не нарушать правила платформы Twitch<br/>
+					- жить в регионах России</div>
+
+			</div>
+			
+			<div class="rewards">Награда победителям</div>
+				
+			<div class="rewards-place1"><div class="place-text">1 место</div><div class="place-description">25 000 ₽</div></div>
+			<div class="rewards-place2"><div class="place-text">2 место</div><div class="place-description">14 000 ₽</div></div>
+			<div class="rewards-place3"><div class="place-text">3 место</div><div class="place-description">8 000 ₽</div></div>
+			<div class="rewards-place4"><div class="place-text">4 место</div><div class="place-description">3 000 ₽</div></div>
+
+			<div class="secret-rewards">
+
+			
+
+			
+
+			<button class="accordion"><div class="secret-rewards-text">+ дополнительные секретные призы победителям</div></button>
+			<div class="panel">
+			<p class="secret-rewards-text">Johan Be glasses</p>
+			</div>
+
+			</div>
+		</div>
+			
+
+			<div class="sponsors-title">Спонсоры турнира
+				<div class="sponsor-tab">
+					<img class="sponsor-img" src="/images/Ellipse 9.png"/>	
+					<span class="pepich">pep1ch</span>
+					
+				</div>
+				
+			</div>
+
+			<div class="customs">
+				<div class="image-text">Локация:</div>
+				<div class="image-descrip">Таможня</div>
+				<div class="button-sub">Записаться на турнир</div>
+				
+			</div>
+
+
+
+		
+			
+
+
+
+			<script>
+			function openForm() {
+				document.getElementById("myForm").style.display = "block";
+			}
+			
+			function closeForm() {
+				document.getElementById("myForm").style.display = "none";
+			}
+			var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+			</script>
+
+
+		</section>
 	</body>
+
+
+
+
+
+
+
+
+
+
+
 </html>
+
+
